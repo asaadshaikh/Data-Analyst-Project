@@ -1,11 +1,10 @@
 import unittest
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+print("sys.path:", sys.path)  # Debugging line
 
 from src.data_cleaning import clean_data
-
 
 class TestDataCleaning(unittest.TestCase):
     def test_clean_data(self):

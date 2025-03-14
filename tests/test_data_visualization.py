@@ -1,10 +1,10 @@
 import unittest
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+print("sys.path:", sys.path)  # Debugging line
 
 from src.data_visualization import visualize_data
-
 
 class TestDataVisualization(unittest.TestCase):
     def test_visualize_data(self):
